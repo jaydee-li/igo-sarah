@@ -1,0 +1,198 @@
+@font-face {
+  font-family: Quicksand;
+  font-weight: 500;
+  src: url(/fonts/quicksand-regular-webfont.woff2) format("woff2"),
+    url(/fonts/quicksand-regular-webfont.woff) format("woff");
+}
+
+@font-face {
+  font-family: Quicksand;
+  font-weight: 300;
+  src: url(/fonts/quicksand-light-webfont.woff2) format("woff2"),
+    url(/fonts/quicksand-light-webfont.woff) format("woff");
+}
+
+@font-face {
+  font-family: Quicksand;
+  font-style: italic;
+  font-weight: 300;
+  src: url(/fonts/quicksand-lightitalic-webfont.woff2) format("woff2"),
+    url(/fonts/quicksand-lightitalic-webfont.woff) format("woff");
+}
+
+@font-face {
+  font-family: Quicksand;
+  font-weight: 800;
+  src: url(/fonts/quicksand-bold-webfont.woff2) format("woff2"),
+    url(/fonts/quicksand-bold-webfont.woff) format("woff");
+}
+
+@font-face {
+  font-family: Quicksand;
+  font-style: italic;
+  font-weight: 800;
+  src: url(/fonts/quicksand-bolditalic-webfont.woff2) format("woff2"),
+    url(/fonts/quicksand-bolditalic-webfont.woff) format("woff");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Quicksand, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+
+  color-scheme: light dark;
+  color: #3a4668;
+  background-color: #fbf0eb;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  text-wrap: balance;
+}
+
+img {
+  max-width: 65%;
+  height: auto;
+  display: inline-block;
+}
+
+.container {
+  background-color: #fbf0eb;
+  background-image: url(/images/background.webp);
+  background-repeat: repeat;
+  object-fit: cover;
+  container-type: inline-size;
+}
+
+@media (min-width: 900px) {
+  .container {
+    max-width: 800px;
+    margin-inline: auto;
+    margin-block: 1.5rem;
+
+    -webkit-box-shadow: 0px 0px 17px 6px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 0px 0px 17px 6px rgba(0, 0, 0, 0.36);
+    box-shadow: 0px 0px 17px 6px rgba(0, 0, 0, 0.36);
+  }
+}
+
+.nav {
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 1.5rem;
+
+  a {
+    text-decoration: none;
+    color: hsl(224, 28%, 32%, 0.4);
+  }
+
+  a:hover {
+    color: #3a4668;
+  }
+}
+
+.nav:hover {
+  background-color: hsl(19, 67%, 85%, 0.5);
+}
+
+h1 {
+  font-weight: 500;
+  font-size: clamp(1rem, 0.5rem + 2.5cqw, 4rem);
+  margin-top: clamp(0rem, 0.5rem + 1.8cqw, 2.5rem);
+  margin-bottom: clamp(0rem, 1rem + 4cqw, 5rem);
+}
+
+#imageName {
+  width: 110%;
+}
+
+.heading {
+  margin-bottom: 3.5rem;
+}
+
+main {
+  font-size: clamp(1rem, 0.5rem + 2cqw, 3rem);
+  font-weight: 800;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 4rem;
+
+  div {
+    margin-bottom: 1.5rem;
+  }
+
+  a {
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    color: #3a4668;
+  }
+
+  #date21 {
+    font-size: calc(clamp(1rem, 0.5rem + 2cqw, 3rem) * 1.5);
+    padding-inline: 2rem;
+    margin-inline: 1rem;
+    border-inline: 2px solid #3a4668;
+  }
+
+  #imgLeft {
+    width: 47%;
+    height: auto;
+    position: absolute;
+    bottom: 0%;
+    left: -15%;
+  }
+
+  #imgRight {
+    width: 47%;
+    height: auto;
+    position: absolute;
+    bottom: 0%;
+    right: -15%;
+  }
+}
+
+#linkSection {
+  text-transform: none;
+  padding-inline: 1rem;
+  margin-bottom: 1.5rem;
+  display: grid;
+  gap: 1rem;
+
+  a {
+    padding: 1rem;
+    background-color: white;
+    text-decoration: none;
+    color: inherit;
+
+    h3 {
+      margin-block: 0.5rem;
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+@media (width > 700px) {
+  #linkSection {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

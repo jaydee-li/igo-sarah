@@ -97,19 +97,22 @@ img {
   justify-content: flex-end;
   gap: 1rem;
   padding: 1.5rem;
+  background-color: hsla(0, 0%, 100%, 0.7);
 
   a {
     text-decoration: none;
-    color: hsl(224, 28%, 32%, 0.4);
+    color: #3a4668;
   }
 
   a:hover {
-    color: #3a4668;
+    color: black;
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
 }
 
 .nav:hover {
-  background-color: hsl(19, 67%, 85%, 0.5);
+  background-color: hsl(19, 67%, 85%, 0.8);
 }
 
 h1 {

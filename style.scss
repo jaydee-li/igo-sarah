@@ -149,7 +149,7 @@ main {
 
   #date21 {
     font-size: calc(clamp(1rem, 0.5rem + 2cqw, 3rem) * 1.5);
-    padding-inline: 2rem;
+    padding-inline: 1rem;
     margin-inline: 1rem;
     border-inline: 2px solid #3a4668;
   }
@@ -198,4 +198,20 @@ main {
   #linkSection {
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+
+.line-up {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr 2fr;
+  align-items: center;
+  justify-content: center;
+  gap: 0px 1em;
+}
+
+.line-up-left {
+  text-align: end;
+}
+
+.line-up-right {
+  text-align: start;
 }

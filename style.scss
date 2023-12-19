@@ -136,6 +136,7 @@ main {
   position: relative;
   overflow: hidden;
   padding-bottom: 4rem;
+  letter-spacing: 2px;
 
   div {
     margin-bottom: 1.5rem;
@@ -214,4 +215,18 @@ main {
 
 .line-up-right {
   text-align: start;
+}
+
+#timezone {
+  position: relative;
+}
+
+#timezone::after {
+  content: "Western Australia Time";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: clamp(0.45rem, 0.4rem + 0.45vw, 0.65rem);
+  letter-spacing: normal;
+  transform: translateY(100%);
 }
